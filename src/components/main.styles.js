@@ -9,7 +9,6 @@ export const Wrapper = styled.div`
   width: 318px;
   border-radius: 2px;
   border: 1px solid var(--mediumGrey);
-  position: relative;
 `;
 
 export const LabelWrapper = styled.label`
@@ -22,6 +21,7 @@ export const LabelWrapper = styled.label`
     font-size: 0.85rem;
     margin-bottom: 0.35rem;
     color: var(--darkGrey);
+    position: relative;
     span {
       color: var(--darkGrey);
       opacity: 0.5;
@@ -45,25 +45,13 @@ export const LabelWrapper = styled.label`
   }
 `;
 
-export const FloatingTextEmail = styled.div`
+export const FloatingText = styled.div`
+  font-family: inherit;
   background-color: var(--darkestGrey);
   color: var(--mediumGrey);
   position: absolute;
-  right: -52%;
-  top: 12.75%;
-  font-size: 0.75rem;
-  padding: 0.65rem 1.35rem;
-  border-radius: 5px;
-  opacity: 90%;
-  text-align: left;
-  width: 172px;
-`;
-export const FloatingTextPhone = styled.div`
-  background-color: var(--darkestGrey);
-  color: var(--mediumGrey);
-  position: absolute;
-  right: -52%;
-  top: 31.75%;
+  right: -73%;
+  top: 130%;
   font-size: 0.75rem;
   padding: 0.65rem 1.35rem;
   border-radius: 5px;
@@ -72,16 +60,17 @@ export const FloatingTextPhone = styled.div`
   width: 172px;
 `;
 
-export const FloatingTextPassword = styled.div`
-  background-color: var(--darkestGrey);
-  color: var(--mediumGrey);
-  position: absolute;
-  right: -52%;
-  top: 54.75%;
-  font-size: 0.75rem;
+export const SubmitButton = styled.button`
   padding: 0.65rem 1.35rem;
+  background-color: var(--darkBlue);
+  color: var(--whiteGrey);
+  border: none;
   border-radius: 5px;
-  opacity: 90%;
-  text-align: left;
-  width: 172px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 400;
+  box-shadow: 0 1px 2px 0px var(--darkestGrey);
+  cursor: pointer;
 `;
+
+export const BottomText = styled.div``;

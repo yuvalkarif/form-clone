@@ -7,6 +7,7 @@
   --whiteGrey: #ffffff;
   --glowBlue: rgba(66, 155, 245, 0.5);
   --solidBlue: rgba(66, 155, 245, 1);
+  --darkBlue: rgb(30, 126, 221);
 
   background-color: var(--lightGrey);
   color: var(--darkestGrey);
