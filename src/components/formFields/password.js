@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { LabelWrapper, FloatingText } from "../main.styles";
-export default function Password() {
+export default function Password({ setPassword, password }) {
   const [isFloat, setIsFloat] = useState(false);
+
   return (
     <LabelWrapper htmlFor="password">
       <span>
@@ -24,17 +25,9 @@ export default function Password() {
         onBlur={(e) => {
           setIsFloat(false);
         }}
+        onChange={({ target }) => setPassword(target.value)}
+        value={password}
       />
     </LabelWrapper>
   );
 }
-
-<LabelWrapper htmlFor="password">
-  <span>Password</span>
-  <input
-    type="password"
-    id="password"
-    aria-label="password"
-    autoComplete="off"
-  />
-</LabelWrapper>;

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { LabelWrapper, FloatingText } from "../main.styles";
-export default function Phone() {
+export default function Phone({ phoneNumber, setPhoneNumber }) {
   const [isFloat, setIsFloat] = useState(false);
   return (
     <LabelWrapper htmlFor="phone">
       <span>
-        Phone{" "}
+        Phone
+        <span>{" (recommended)"}</span>
         {isFloat && (
           <FloatingText>
             {" "}
@@ -25,6 +26,8 @@ export default function Phone() {
         onBlur={(e) => {
           setIsFloat(false);
         }}
+        onChange={({ target }) => setPhoneNumber(target.value)}
+        value={phoneNumber}
       />
 
       <p>Standard call, message, or data rates may apply.</p>

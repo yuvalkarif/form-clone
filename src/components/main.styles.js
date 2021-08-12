@@ -9,6 +9,28 @@ export const Wrapper = styled.div`
   width: 318px;
   border-radius: 2px;
   border: 1px solid var(--mediumGrey);
+
+  .passCheck {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    .valid {
+      color: #86d154;
+    }
+    .invalid {
+      color: #e8321e;
+    }
+    li {
+      svg {
+        width: 12px;
+        height: 12px;
+        margin-right: 0.55rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
 
 export const LabelWrapper = styled.label`
