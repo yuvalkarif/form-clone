@@ -1,12 +1,4 @@
-import {
-  Logo,
-  LogoDiv,
-  ProfileDiv,
-  SearchDiv,
-  SubTitle,
-  Title,
-  Wrapper,
-} from "./header.styles";
+import { Logo, SubTitle, Title, Wrapper } from "./header.styles";
 import LogoSrc from "../images/logo.png";
 export default function Header() {
   return (

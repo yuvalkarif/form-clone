@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import { bounceIn, fadeInRight, merge } from "react-animations";
-const bounceFade = merge(bounceIn, fadeInRight);
-const bounceFadeAnimation = keyframes`${bounceFade}`;
+import { bounceIn, fadeInRight } from "react-animations";
+
 const bounceAnimation = keyframes`${bounceIn}`;
 const fadeAnimation = keyframes`${fadeInRight}`;
 const opacityFade = keyframes`

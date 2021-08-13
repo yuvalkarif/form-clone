@@ -2,7 +2,7 @@ import { useState } from "react";
 import { LabelWrapper, FloatingText } from "../main.styles";
 export default function Email({ emailAdress, setEmailAdress }) {
   const [isFloat, setIsFloat] = useState(false);
-  console.log(setEmailAdress);
+
   return (
     <LabelWrapper htmlFor="email">
       <span>
