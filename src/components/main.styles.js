@@ -1,14 +1,40 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+
   background-color: var(--whiteGrey);
   padding: 2rem 2rem;
   width: 318px;
   border-radius: 2px;
   border: 1px solid var(--mediumGrey);
+
+  h1 {
+    text-align: center;
+    font: inherit;
+    font-size: 1.5rem;
+    color: var(--darkGrey);
+    margin: 0;
+  }
+  h2 {
+    text-align: center;
+    font: inherit;
+    font-size: 0.8rem;
+    color: var(--mediumerGrey);
+    margin-top: 0.85rem;
+    margin-bottom: 0;
+  }
+  a {
+    text-align: center;
+    font: inherit;
+    font-size: 0.8rem;
+    color: var(--mediumerGrey);
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--solidBlue);
+  }
 
   .passCheck {
     margin: 0;
@@ -95,4 +121,14 @@ export const SubmitButton = styled.button`
   cursor: pointer;
 `;
 
-export const BottomText = styled.div``;
+export const BottomText = styled.div`
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: oblique;
+  margin-top: 1rem;
+  color: var(--mediumerGrey);
+  a {
+    text-decoration: none;
+    color: var(--solidBlue);
+  }
+`;

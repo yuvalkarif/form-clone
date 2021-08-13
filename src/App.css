@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 :root {
   --darkestGrey: #212121;
   --darkGrey: #474747;
+  --mediumerGrey: #9c9b9b;
   --mediumGrey: #c9c9c9;
   --lightGrey: #ececec;
   --whiteGrey: #ffffff;

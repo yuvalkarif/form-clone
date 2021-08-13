@@ -1,10 +1,22 @@
-import { LogoDiv, ProfileDiv, SearchDiv, Wrapper } from "./header.styles";
+import {
+  Logo,
+  LogoDiv,
+  ProfileDiv,
+  SearchDiv,
+  SubTitle,
+  Title,
+  Wrapper,
+} from "./header.styles";
+import LogoSrc from "../images/logo.png";
 export default function Header() {
   return (
     <Wrapper>
-      <LogoDiv>LOGO</LogoDiv>
-      <SearchDiv>SEARCH</SearchDiv>
-      <ProfileDiv>PHOTO</ProfileDiv>
+      <Title>karif</Title>
+      <SubTitle>
+        {" "}
+        <Logo src={LogoSrc} />
+        <a href="https://yuvalkarif3.github.io/web-replica/">karifgram</a>
+      </SubTitle>
     </Wrapper>
   );
 }

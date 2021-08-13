@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { LabelWrapper, FloatingText } from "../main.styles";
-export default function Password({ setPassword, password }) {
+export default function Password({ setPassword, password, setShowCheck }) {
   const [isFloat, setIsFloat] = useState(false);
 
   return (
@@ -20,6 +20,7 @@ export default function Password({ setPassword, password }) {
         aria-label="password"
         autoComplete="off"
         onFocus={(e) => {
+          setShowCheck(true);
           setIsFloat(true);
         }}
         onBlur={(e) => {
